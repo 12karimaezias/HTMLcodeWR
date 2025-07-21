@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Informations Conteneur</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 15px;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    .header {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #007BFF;
+    }
+
+    .table-title {
+      margin: 10px 0 5px;
+      font-size: 16px;
+      color: #444;
+      font-weight: 600;
+    }
+
+    .table-container {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+      overflow-x: auto;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    th, td {
+      padding: 8px 10px;
+      text-align: left;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    th {
+      background-color: #007BFF;
+      color: white;
+      font-weight: 600;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    @media (max-width: 480px) {
+      .header {
+        font-size: 18px;
+      }
+
+      .table-title {
+        font-size: 14px;
+      }
+
+      th, td {
+        padding: 6px 8px;
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">Bienvenue !</div>
+
+  <div class="table-title">Information Conteneur</div>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>N° TC</th>
+          <th>Type</th>
+          <th>ISO</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>TGHU8762930</td>
+          <td>40P</td>
+          <td>HC</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="table-title">Détail de la Marchandise</div>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Marchandise</th>
+          <th>Tonnage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sucre</td>
+          <td>3,3 Tonne</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
