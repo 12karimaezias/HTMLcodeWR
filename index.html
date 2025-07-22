@@ -1,96 +1,132 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Schéma Conteneur</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tableau Conteneur avec Tonnage</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 20px;
-      background-color: #f2f4f7;
-      color: #333;
-    }
-
-    .header {
-      font-size: 20px;
-      font-weight: bold;
-      color: #007BFF;
-      margin-bottom: 20px;
-    }
-
-    .title {
-      font-size: 16px;
-      font-weight: 600;
-      margin-bottom: 10px;
-      color: #444;
-    }
-
-    .card {
-      background-color: #fff;
-      border-radius: 10px;
-      padding: 15px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
-    }
-
-    .info-row {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      margin-bottom: 8px;
-    }
-
-    .info-label {
-      font-weight: 600;
-      color: #555;
-      min-width: 120px;
-    }
-
-    .info-value {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 20px;
+      background-color: #f9fafb;
       color: #222;
     }
 
-    @media (max-width: 480px) {
-      .info-row {
-        flex-direction: column;
-        margin-bottom: 10px;
+    header {
+      font-size: 24px;
+      font-weight: 700;
+      color: #007bff;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    header span.emoji {
+      font-size: 28px;
+      line-height: 1;
+    }
+
+    .table-container {
+      overflow-x: auto;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: 700px;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid #ddd;
+      font-size: 14px;
+    }
+
+    th {
+      background-color: #007bff;
+      color: white;
+      font-weight: 600;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    tr:hover {
+      background-color: #f1f7ff;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        margin: 10px;
+      }
+      header {
+        font-size: 20px;
+        gap: 6px;
+      }
+      table {
+        font-size: 13px;
+        min-width: unset;
+      }
+      th, td {
+        padding: 8px 6px;
       }
     }
   </style>
 </head>
 <body>
+  <header>
+    <span class="emoji" aria-label="hello emoji">👋</span>
+    Bienvenue !
+  </header>
 
-  <div class="header">Bienvenue !</div>
-
-  <div class="title">Information Conteneur</div>
-  <div class="card">
-    <div class="info-row">
-      <div class="info-label">N° TC :</div>
-      <div class="info-value">TGHU8762930</div>
-    </div>
-    <div class="info-row">
-      <div class="info-label">Type :</div>
-      <div class="info-value">40P</div>
-    </div>
-    <div class="info-row">
-      <div class="info-label">ISO :</div>
-      <div class="info-value">HC</div>
-    </div>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>N° TC</th>
+          <th>Type</th>
+          <th>ISO</th>
+          <th>Expéditeur</th>
+          <th>Destinataire</th>
+          <th>Tonnage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>TGHU8762930</td>
+          <td>40P</td>
+          <td>HW</td>
+          <td>Société X</td>
+          <td>Client A</td>
+          <td>3,3 Tonne</td>
+        </tr>
+        <tr>
+          <td>ABCD1234567</td>
+          <td>20P</td>
+          <td>HC</td>
+          <td>Société Y</td>
+          <td>Client B</td>
+          <td>2,1 Tonne</td>
+        </tr>
+        <tr>
+          <td>XYZ9876543</td>
+          <td>40P</td>
+          <td>HW</td>
+          <td>Société Z</td>
+          <td>Client C</td>
+          <td>4,0 Tonne</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-
-  <div class="title">Marchandise</div>
-  <div class="card">
-    <div class="info-row">
-      <div class="info-label">Marchandise :</div>
-      <div class="info-value">Sucre</div>
-    </div>
-    <div class="info-row">
-      <div class="info-label">Tonnage :</div>
-      <div class="info-value">3,3 Tonne</div>
-    </div>
-  </div>
-
 </body>
 </html>
+  
+
+    
