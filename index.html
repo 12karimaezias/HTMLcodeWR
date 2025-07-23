@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Informations Conteneurs</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
       margin: 0;
       padding: 20px;
-      background-color: #f5f5f5;
-    }
-
-    h1 {
-      color: #333;
-      margin-bottom: 20px;
     }
 
     .welcome {
@@ -22,6 +17,11 @@
       font-weight: bold;
       color: #444;
       margin-bottom: 10px;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
     }
 
     table {
@@ -64,49 +64,46 @@
   <table>
     <thead>
       <tr>
-        <th>N TC</th>
+        <th>N° TC</th>
         <th>Tonnage</th>
         <th>Type</th>
+        <th>ISO</th>
+        <th>Hauteur</th>
         <th>Marchandise</th>
         <th>Expéditeur</th>
         <th>Client</th>
       </tr>
     </thead>
     <tbody>
-      <!-- Génération de 20 lignes -->
-      <!-- Tu peux modifier les N° et types comme tu veux -->
-      <!-- Pour exemple, je les numérote -->
-      <!-- Marchandise = Conserve, Client = Client A, Expéditeur = Société X -->
-      <!-- Tu peux copier/coller ces lignes dans un éditeur HTML -->
-      <!-- Voici les 20 lignes -->
-      <!-- Debut -->
-      <tr><td>TGHU8762901</td><td>3.1 Tonne</td><td>40P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
-      <tr><td>TGHU8762902</td><td>3.3 Tonne</td><td>20P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
-      <tr><td>TGHU8762903</td><td>3.5 Tonne</td><td>40P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
-      <tr><td>TGHU8762904</td><td>3.0 Tonne</td><td>40P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
-      <tr><td>TGHU8762905</td><td>3.7 Tonne</td><td>20P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
-      <tr><td>TGHU8762906</td><td>3.6 Tonne</td><td>40P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
-      <tr><td>TGHU8762907</td><td>4.0 Tonne</td><td>40P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
-      <tr><td>TGHU8762908</td><td>2.9 Tonne</td><td>20P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
-      <tr><td>TGHU8762909</td><td>3.2 Tonne</td><td>40P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
-      <tr><td>TGHU8762910</td><td>3.8 Tonne</td><td>40P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
-      <tr><td>TGHU8762911</td><td>3.4 Tonne</td><td>40P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
-      <tr><td>TGHU8762912</td><td>4.1 Tonne</td><td>20P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
-      <tr><td>TGHU8762913</td><td>4.2 Tonne</td><td>40P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
-      <tr><td>TGHU8762914</td><td>3.0 Tonne</td><td>40P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
-      <tr><td>TGHU8762915</td><td>2.8 Tonne</td><td>20P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
-      <tr><td>TGHU8762916</td><td>3.3 Tonne</td><td>40P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
-      <tr><td>TGHU8762917</td><td>3.9 Tonne</td><td>40P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
-      <tr><td>TGHU8762918</td><td>3.2 Tonne</td><td>20P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
-      <tr><td>TGHU8762919</td><td>4.0 Tonne</td><td>40P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
-      <tr><td>TGHU8762920</td><td>4.1 Tonne</td><td>20P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
-      <!-- Fin -->
+      <!-- 20 lignes avec colonne Hauteur ajoutée -->
+      <tr><td>TGHU001</td><td>3.1 Tonne</td><td>40P</td><td>45G1</td><td>HC</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU002</td><td>3.3 Tonne</td><td>20P</td><td>22G1</td><td>ST</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU003</td><td>3.5 Tonne</td><td>40P</td><td>45G1</td><td>HC</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU004</td><td>3.0 Tonne</td><td>40P</td><td>45G1</td><td>HC</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU005</td><td>3.7 Tonne</td><td>20P</td><td>22G1</td><td>ST</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU006</td><td>3.6 Tonne</td><td>40P</td><td>45G1</td><td>HC</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU007</td><td>4.0 Tonne</td><td>40P</td><td>45G1</td><td>HC</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU008</td><td>2.9 Tonne</td><td>20P</td><td>22G1</td><td>ST</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU009</td><td>3.2 Tonne</td><td>40P</td><td>45G1</td><td>HC</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU010</td><td>3.8 Tonne</td><td>40P</td><td>45G1</td><td>HW</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+
+      <tr><td>TGHU011</td><td>3.4 Tonne</td><td>40P</td><td>45G1</td><td>HC</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU012</td><td>4.1 Tonne</td><td>20P</td><td>22G1</td><td>ST</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU013</td><td>4.2 Tonne</td><td>40P</td><td>45G1</td><td>HW</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU014</td><td>3.0 Tonne</td><td>40P</td><td>45G1</td><td>HC</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU015</td><td>2.8 Tonne</td><td>20P</td><td>22G1</td><td>ST</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU016</td><td>3.3 Tonne</td><td>40P</td><td>45G1</td><td>HC</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU017</td><td>3.9 Tonne</td><td>40P</td><td>45G1</td><td>HW</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU018</td><td>3.2 Tonne</td><td>20P</td><td>22G1</td><td>ST</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU019</td><td>4.0 Tonne</td><td>40P</td><td>45G1</td><td>HC</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU020</td><td>4.1 Tonne</td><td>20P</td><td>22G1</td><td>ST</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
     </tbody>
   </table>
 </body>
 </html>
 
-  
     
+     
+
      
    
