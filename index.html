@@ -1,111 +1,112 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tableau Marchandise</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Informations Conteneurs</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f6f8;
-      margin: 20px;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+
+    h1 {
       color: #333;
-    }
-
-    header {
-      font-size: 24px;
-      font-weight: bold;
-      color: #007bff;
       margin-bottom: 20px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
     }
 
-    .emoji {
-      font-size: 26px;
-    }
-
-    .table-container {
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      overflow-x: auto;
-      padding: 10px;
+    .welcome {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #444;
+      margin-bottom: 10px;
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
-      min-width: 700px;
+      background-color: #d3d3d3; /* gris forcé */
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
     th, td {
-      padding: 10px;
-      text-align: left;
-      border-bottom: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+      border-bottom: 1px solid #bbb;
     }
 
     th {
-      background-color: #ffc107; /* Jaune */
+      background-color: #bbb;
       color: #000;
+      font-weight: bold;
     }
 
-    tr:hover {
-      background-color: #f1f1f1;
-    }
-
-    @media (max-width: 600px) {
-      header {
-        font-size: 20px;
-      }
-
-      table {
-        font-size: 13px;
-      }
-
+    @media screen and (max-width: 600px) {
       th, td {
-        padding: 8px 6px;
+        font-size: 12px;
+        padding: 8px;
+      }
+
+      .welcome {
+        font-size: 1.2em;
       }
     }
   </style>
 </head>
 <body>
+  <div class="welcome">👋 Bienvenue !</div>
+  <h1>Informations Conteneurs</h1>
 
-  <header><span class="emoji">👋</span>Bienvenue !</header>
-
-  <div class="table-container">
-    <table>
-      <thead>
-        <tr>
-          <th>N° TC</th>
-          <th>Type</th>
-          <th>ISO</th>
-          <th>Expéditeur</th>
-          <th>Client</th>
-          <th>Type de marchandise</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- 10 lignes avec même données -->
-        <tr><td>TGHU1000001</td><td>40P</td><td>HC</td><td>Société X</td><td>Client A</td><td>Conserve</td></tr>
-        <tr><td>TGHU1000002</td><td>40P</td><td>HC</td><td>Société X</td><td>Client A</td><td>Conserve</td></tr>
-        <tr><td>TGHU1000003</td><td>40P</td><td>HC</td><td>Société X</td><td>Client A</td><td>Conserve</td></tr>
-        <tr><td>TGHU1000004</td><td>40P</td><td>HC</td><td>Société X</td><td>Client A</td><td>Conserve</td></tr>
-        <tr><td>TGHU1000005</td><td>40P</td><td>HC</td><td>Société X</td><td>Client A</td><td>Conserve</td></tr>
-        <tr><td>TGHU1000006</td><td>40P</td><td>HC</td><td>Société X</td><td>Client A</td><td>Conserve</td></tr>
-        <tr><td>TGHU1000007</td><td>40P</td><td>HC</td><td>Société X</td><td>Client A</td><td>Conserve</td></tr>
-        <tr><td>TGHU1000008</td><td>40P</td><td>HC</td><td>Société X</td><td>Client A</td><td>Conserve</td></tr>
-        <tr><td>TGHU1000009</td><td>40P</td><td>HC</td><td>Société X</td><td>Client A</td><td>Conserve</td></tr>
-        <tr><td>TGHU1000010</td><td>40P</td><td>HC</td><td>Société X</td><td>Client A</td><td>Conserve</td></tr>
-      </tbody>
-    </table>
-  </div>
-
+  <table>
+    <thead>
+      <tr>
+        <th>N TC</th>
+        <th>Tonnage</th>
+        <th>Type</th>
+        <th>Marchandise</th>
+        <th>Expéditeur</th>
+        <th>Client</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Génération de 20 lignes -->
+      <!-- Tu peux modifier les N° et types comme tu veux -->
+      <!-- Pour exemple, je les numérote -->
+      <!-- Marchandise = Conserve, Client = Client A, Expéditeur = Société X -->
+      <!-- Tu peux copier/coller ces lignes dans un éditeur HTML -->
+      <!-- Voici les 20 lignes -->
+      <!-- Debut -->
+      <tr><td>TGHU8762901</td><td>3.1 Tonne</td><td>40P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU8762902</td><td>3.3 Tonne</td><td>20P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU8762903</td><td>3.5 Tonne</td><td>40P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU8762904</td><td>3.0 Tonne</td><td>40P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU8762905</td><td>3.7 Tonne</td><td>20P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU8762906</td><td>3.6 Tonne</td><td>40P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU8762907</td><td>4.0 Tonne</td><td>40P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU8762908</td><td>2.9 Tonne</td><td>20P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU8762909</td><td>3.2 Tonne</td><td>40P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU8762910</td><td>3.8 Tonne</td><td>40P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU8762911</td><td>3.4 Tonne</td><td>40P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU8762912</td><td>4.1 Tonne</td><td>20P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU8762913</td><td>4.2 Tonne</td><td>40P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU8762914</td><td>3.0 Tonne</td><td>40P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU8762915</td><td>2.8 Tonne</td><td>20P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU8762916</td><td>3.3 Tonne</td><td>40P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU8762917</td><td>3.9 Tonne</td><td>40P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU8762918</td><td>3.2 Tonne</td><td>20P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU8762919</td><td>4.0 Tonne</td><td>40P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <tr><td>TGHU8762920</td><td>4.1 Tonne</td><td>20P</td><td>Conserve</td><td>Société X</td><td>Client A</td></tr>
+      <!-- Fin -->
+    </tbody>
+  </table>
 </body>
 </html>
+  
    
   
-
-  
+    
        
