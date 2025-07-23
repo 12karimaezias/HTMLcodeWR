@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tableau Conteneurs - Conserve</title>
+  <title>Tableau Marchandise</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      margin: 20px;
       background-color: #f4f6f8;
-      color: #222;
+      margin: 20px;
+      color: #333;
     }
 
     header {
@@ -29,50 +29,43 @@
     .table-container {
       background-color: #fff;
       border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
       overflow-x: auto;
       padding: 10px;
     }
 
     table {
-      border-collapse: collapse;
       width: 100%;
-      min-width: 750px;
+      border-collapse: collapse;
+      min-width: 700px;
     }
 
     th, td {
-      text-align: left;
       padding: 10px;
-      font-size: 14px;
+      text-align: left;
       border-bottom: 1px solid #ddd;
     }
 
     th {
-      background-color: #28a745; /* vert doux */
-      color: white;
-      font-weight: 600;
+      background-color: #ffc107; /* Jaune */
+      color: #000;
     }
 
     tr:hover {
-      background-color: #f0f8ff;
+      background-color: #f1f1f1;
     }
 
     @media (max-width: 600px) {
-      body {
-        margin: 10px;
+      header {
+        font-size: 20px;
       }
 
       table {
         font-size: 13px;
-        min-width: unset;
       }
 
       th, td {
         padding: 8px 6px;
-      }
-
-      header {
-        font-size: 20px;
       }
     }
   </style>
@@ -89,42 +82,30 @@
           <th>Type</th>
           <th>ISO</th>
           <th>Expéditeur</th>
-          <th>Destinataire</th>
+          <th>Client</th>
           <th>Type de marchandise</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>TGHU8762930</td>
-          <td>40P</td>
-          <td>HW</td>
-          <td>Société X</td>
-          <td>Client A</td>
-          <td>Conserve</td>
-        </tr>
-        <tr>
-          <td>MSCU1234567</td>
-          <td>20P</td>
-          <td>HC</td>
-          <td>Société Y</td>
-          <td>Client B</td>
-          <td>Conserve</td>
-        </tr>
-        <tr>
-          <td>CAIU7654321</td>
-          <td>40P</td>
-          <td>GP</td>
-          <td>Société Z</td>
-          <td>Client C</td>
-          <td>Conserve</td>
-        </tr>
+        <!-- 10 lignes avec même données -->
+        <tr><td>TGHU1000001</td><td>40P</td><td>HC</td><td>Société X</td><td>Client A</td><td>Conserve</td></tr>
+        <tr><td>TGHU1000002</td><td>40P</td><td>HC</td><td>Société X</td><td>Client A</td><td>Conserve</td></tr>
+        <tr><td>TGHU1000003</td><td>40P</td><td>HC</td><td>Société X</td><td>Client A</td><td>Conserve</td></tr>
+        <tr><td>TGHU1000004</td><td>40P</td><td>HC</td><td>Société X</td><td>Client A</td><td>Conserve</td></tr>
+        <tr><td>TGHU1000005</td><td>40P</td><td>HC</td><td>Société X</td><td>Client A</td><td>Conserve</td></tr>
+        <tr><td>TGHU1000006</td><td>40P</td><td>HC</td><td>Société X</td><td>Client A</td><td>Conserve</td></tr>
+        <tr><td>TGHU1000007</td><td>40P</td><td>HC</td><td>Société X</td><td>Client A</td><td>Conserve</td></tr>
+        <tr><td>TGHU1000008</td><td>40P</td><td>HC</td><td>Société X</td><td>Client A</td><td>Conserve</td></tr>
+        <tr><td>TGHU1000009</td><td>40P</td><td>HC</td><td>Société X</td><td>Client A</td><td>Conserve</td></tr>
+        <tr><td>TGHU1000010</td><td>40P</td><td>HC</td><td>Société X</td><td>Client A</td><td>Conserve</td></tr>
       </tbody>
     </table>
   </div>
 
 </body>
 </html>
-
-    
-      
+   
   
+
+  
+       
